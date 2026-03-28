@@ -59,15 +59,14 @@ def op3Pesq():
     except ValueError:
             return "Você digitou algum valor inválido"
 def op4Update():
-    #1.exibe a tabela atual
-    op1List()#Exibir lista 
+    op1List()#Exibir lista atual
     perg = int(input("Digite a posição: "))
     if 0 < perg <= len(lista):#Verifica se o intervalo é válido 
-        novo_item = input("Digite o novo comentário: ").strip()
+        novo_item = input("Digite a nova reclamação: ").strip()
         lista[perg-1] = novo_item
     else:
         print("Posição inválida")
-    op1List()
+    op1List()#Exibir lista pós atualização
 def op5Remove():
     for i in range(len(lista)):
         print("Código,Item")

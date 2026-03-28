@@ -68,18 +68,18 @@ def op4Update():
         print("Posição inválida")
     op1List()#Exibir lista pós atualização
 def op5Remove():
+    print("Código;Item")
     for i in range(len(lista)):
-        print("Código,Item")
-        print(f"{i+1},{lista[i]}")
-    perg=int(input("Digite qual comentário você quer remover.Utilize a posição para encontrar"))
+        print(f"{i+1};{lista[i]}")
+    perg=int(input("Digite qual comentário você quer remover.Utilize a posição para encontrar: "))
     if 0 <= perg < len(lista):
         item = lista.pop(perg)
         print(f"Você acabou de remover {item} ")
     else:
         print("Item não registrado")
+    print("Agora sua lista está \nPosição,Reclamação")
     for i in range(len(lista)):
-        print("Agora sua lista está \nPosição,Reclamação")
-        print(f"{i+1},{lista[i]}")
+        print(f"{i+1};{lista[i]}")
 def op6Total():
     return f"Sua lista tem um total de {len(lista)} elementos."
 #==Fim da definição de funções=========
