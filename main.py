@@ -1,7 +1,7 @@
 from functions import *
 
 #==Fim da definição de funções=========
-lista = ["Batata","Palha"]
+lista = []
 print("Bem vindo ao Hablai...")
 while True: #Menu
         try:
